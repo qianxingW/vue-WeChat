@@ -3,17 +3,18 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import App from './App'
-import router from './router'
+import routes from './router/router'
 Vue.use(Router)
 
-const routes = new Router({
-  router
+const router = new Router({
+  routes
 })
 
 Vue.config.productionTip = false // 设置为 false 以阻止 vue 在启动时生成生产提示。
 
 /* eslint-disable no-new */
 new Vue({
-  routes,
-  runder: h => h(App)
-}).$mount('#app')
+  el: '#app',
+  router,
+  render: h => h(App)
+})
