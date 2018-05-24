@@ -89,39 +89,39 @@ export default {
       -webkit-transform-origin: 90% 0%;
       transform-origin: 90% 0%;
       li {
-            position: relative;
-            height: 1.545894rem;
-            line-height: 1.545894rem;
-            &:not(:last-child)::after {
-                content: "";
-                width: 200%;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                height: .038647rem;
-                background-color: #5b5b5d;
-                -webkit-transform: scale(0.5);
-                transform: scale(0.5);
-                -webkit-transform-origin: 0 100%;
-                transform-origin: 0 100%;
-            }
+        position: relative;
+        height: 1.545894rem;
+        line-height: 1.545894rem;
+        &:not(:last-child)::after {
+          content: "";
+          width: 200%;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: .038647rem;
+          background-color: #5b5b5d;
+          -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+          -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
         }
-        &::before {
-            width: 0;
-            height: 0;
-            position: absolute;
-            top: -.270531rem;
-            right: .57971rem;
-            content: "";
-            border-width: 0 .231884rem .309179rem;
-            border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #49484b rgba(0, 0, 0, 0);
-            border-style: solid;
-        }
-        .iconfont {
-            float: left;
-            font-size: .618357rem;
-            margin-right: .57971rem;
-        }
+      }
+      &::before {
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: -.270531rem;
+        right: .57971rem;
+        content: "";
+        border-width: 0 .231884rem .309179rem;
+        border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #49484b rgba(0, 0, 0, 0);
+        border-style: solid;
+      }
+      .iconfont {
+        float: left;
+        font-size: .618357rem;
+        margin-right: .57971rem;
+    }
     }
     .menu-open{
       -webkit-transition: initial;
