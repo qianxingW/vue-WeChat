@@ -4,6 +4,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import App from './App'
 import routes from './router/router'
+import store from './store/'
+import './config/rem'
 Vue.use(Router)
 
 const router = new Router({
@@ -16,5 +18,6 @@ Vue.config.productionTip = false // 设置为 false 以阻止 vue 在启动时�
 new Vue({
   el: '#app',
   router,
+  store,
   render: h => h(App)
 })

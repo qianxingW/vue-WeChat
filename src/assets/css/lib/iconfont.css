@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 679033 */
+  src: url('//at.alicdn.com/t/font_679033_09kqxneijj0jm7vi.eot');
+  src: url('//at.alicdn.com/t/font_679033_09kqxneijj0jm7vi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_679033_09kqxneijj0jm7vi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_679033_09kqxneijj0jm7vi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_679033_09kqxneijj0jm7vi.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 消息 */
+.icon-wechat::before{content: "\e679"}
+/* 通讯录 */
+.icon-address::before{content: "\e650"}
+/* 发现 */
+.icon-find::before{content: "\e66d"}
+/* 我 */
+.icon-me::before{content: "\e610"}
+/* 加号 */
+.icon-plus::before{content: "\e600"}
+/* 添加朋友 */
+.icon-addfriend::before{content: "\e638"}
+/* 扫一扫 */
+.icon-sys::before{content: "\e602"}
+/* 收付款 */
+.icon-sfk::before{content: "\e658"}
