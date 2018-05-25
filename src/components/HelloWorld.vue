@@ -84,12 +84,27 @@
 </template>
 
 <script>
+import {mapState, mapActions} from 'vuex'
 export default {
   name: 'HelloWorld',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  computed: {
+    ...mapState([
+      'chatList'
+    ])
+  },
+  created () {
+    this.getChatList()
+    console.log(this.chatList)
+  },
+  methods: {
+    ...mapActions([
+      'getChatList'
+    ])
   }
 }
 </script>

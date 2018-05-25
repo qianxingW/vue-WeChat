@@ -38,6 +38,7 @@ export default {
     }
   },
   computed: {
+    // 下拉菜单状态管理
     ...mapState([
       'menuStatus'
     ])

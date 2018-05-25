@@ -2,11 +2,11 @@
   <div id="app">
     <div id="wx-app">
       <!-- 顶部显示 -->
-      <header id="wx-header">
+      <header id="wx-header" :class="{'header-hide':seachStatus}">
         <wx-header></wx-header>
       </header>
       <!-- 顶部搜索 '微信'.'通讯录' 显示-->
-      <wx-seach></wx-seach>
+      <wx-seach v-show="$route.path.indexOf('find') === -1 && $route.path.indexOf('me') === -1"></wx-seach>
       <!-- 底部切换 '微信','通讯录','发现','我' -->
       <footer id="wx-footer">
         <wx-footer></wx-footer>
@@ -17,6 +17,7 @@
 </template>
 
 <script>
+import {mapState} from 'vuex'
 import WxHeader from './components/common/wx-header'
 import WxSeach from './components/common/seach'
 import WxFooter from './components/common/wx-footer'
@@ -25,6 +26,11 @@ export default {
   data () {
     return {
     }
+  },
+  computed: {
+    ...mapState([
+      'seachStatus'
+    ])
   },
   components: {
     WxHeader,
@@ -56,20 +62,30 @@ export default {
   height: 1.73913rem;
   position: relative;
   background: linear-gradient(180deg,#303036,#3c3b40);
+  transition: all 0.2s linear;
 }
+// 顶部消失动画
+.header-hide{
+    margin-top: -1.73913rem;
+  }
 #wx-footer{
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   &:not(:first-child)::before{
-    content: '';
+    content: " ";
     position: absolute;
-    width: 100%;
-    height: 1px;
-    top: 0;
     left: 0;
-    background: #b7b7b7;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #C0BFC4;
+    color: #C0BFC4;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
   }
 }
 </style>

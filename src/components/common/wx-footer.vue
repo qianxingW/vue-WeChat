@@ -7,18 +7,18 @@
             </div>
             <span class="wx-n">微信</span>
         </router-link>
-         <router-link to="/home1" tag="section">
+         <router-link to="/address" tag="section">
             <div class="iconfont icon-address">
             </div>
             <span class="wx-n">通讯录</span>
         </router-link>
-         <router-link to="/home2" tag="section">
+         <router-link to="/find" tag="section">
             <div class="iconfont icon-find">
                 <i class="weui-badge weui-badge_dot wx-find-count"></i>
             </div>
             <span class="wx-n">发现</span>
         </router-link>
-         <router-link to="/home4" tag="section">
+         <router-link to="/me" tag="section">
             <div class="iconfont icon-me">
             </div>
             <span class="wx-n">我</span>
@@ -42,7 +42,7 @@ export default {
     background: #fff;
     font-size: 0.46rem;
     height: 1.623rem;
-    padding-top: 0.309rem;
+    padding-top: .193237rem;
     section{
         text-align: center;
         user-select: none;// 文本不能被选择
@@ -50,8 +50,8 @@ export default {
         flex-grow: 1;
         line-height: 1;
         div{
-            width: 1.08rem;
-            height: 1.08rem;
+            width: 1.043478rem;
+            height: 1.043478rem;
             font-size: 1.08rem;
             margin: 0 auto;
             position: relative;
@@ -59,7 +59,8 @@ export default {
             margin-bottom: 0.07rem;
         }
         .wx-n{
-            color: #929292;
+            color: #808080;
+            font-size: .386473rem;
             -webkit-transform-origin: 50% 0;
             transform-origin: 50% 0;
             -webkit-transform: scale(.9);
