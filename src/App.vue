@@ -7,11 +7,16 @@
       </header>
       <!-- 顶部搜索 '微信'.'通讯录' 显示-->
       <wx-seach v-show="$route.path.indexOf('find') === -1 && $route.path.indexOf('me') === -1"></wx-seach>
+      <!-- 主题内容 -->
+      <section id="wx-content">
+        <keep-alive>
+          <router-view></router-view>
+        </keep-alive>
+      </section>
       <!-- 底部切换 '微信','通讯录','发现','我' -->
       <footer id="wx-footer">
         <wx-footer></wx-footer>
       </footer>
-      <router-view/>
     </div>
   </div>
 </template>
@@ -66,8 +71,15 @@ export default {
 }
 // 顶部消失动画
 .header-hide{
-    margin-top: -1.73913rem;
-  }
+  margin-top: -1.73913rem;
+}
+#wx-content{
+  padding-bottom: 1.623rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 1;
+  width: 100%;
+}
 #wx-footer{
   position: fixed;
   left: 0;

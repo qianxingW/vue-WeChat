@@ -37,7 +37,6 @@ export default {
 .wx-footer{
     display: flex;
     width: 100%;
-    height: 100%;
     overflow: hidden;
     background: #fff;
     font-size: 0.46rem;
