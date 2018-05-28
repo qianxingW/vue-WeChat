@@ -1,4 +1,4 @@
-export default [
+module.exports = [
   {
     id: '0',
     name: '马云',
@@ -12,7 +12,11 @@ export default [
     Msg: [{
       text: '11',
       endTimeStr: 1472632586443
-    }]
+    }],
+    chatStatus: {
+      isMsgRead: true, // 标记已读
+      isMsgDis: true // 消息免打扰
+    }
   },
   {
     id: '1',
@@ -27,6 +31,10 @@ export default [
     Msg: [{
       text: '11',
       endTimeStr: 1472632586443
-    }]
+    }],
+    chatStatus: {
+      isMsgRead: true, // 标记已读
+      isMsgDis: false // 消息免打扰
+    }
   }
 ]

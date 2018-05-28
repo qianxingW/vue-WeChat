@@ -5,7 +5,6 @@ import Router from 'vue-router'
 import App from './App'
 import routes from './router/router'
 import store from './store/'
-import './config/rem'
 Vue.use(Router)
 
 const router = new Router({

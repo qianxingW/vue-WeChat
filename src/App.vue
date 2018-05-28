@@ -64,17 +64,17 @@ export default {
 }
 #wx-header{
   width: 100%;
-  height: 1.73913rem;
+  height: 45px;
   position: relative;
   background: linear-gradient(180deg,#303036,#3c3b40);
   transition: all 0.2s linear;
 }
 // 顶部消失动画
 .header-hide{
-  margin-top: -1.73913rem;
+  margin-top: -45px;
 }
 #wx-content{
-  padding-bottom: 1.623rem;
+  padding-bottom: 50px;
   overflow-x: hidden;
   overflow-y: auto;
   z-index: 1;

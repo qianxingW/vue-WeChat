@@ -1,9 +1,8 @@
-
-import HelloWorld from '@/components/HelloWorld'
+const WeChat = r => require.ensure([], () => r(require('../components/wechat/wechat')), 'WeChat')
 export default [
   {
     path: '/',
-    name: 'HelloWorld',
-    component: HelloWorld
+    name: 'WeChat',
+    component: WeChat
   }
 ]

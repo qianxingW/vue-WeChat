@@ -39,9 +39,9 @@ export default {
     width: 100%;
     overflow: hidden;
     background: #fff;
-    font-size: 0.46rem;
-    height: 1.623rem;
-    padding-top: .193237rem;
+    font-size: 12px;
+    height: 50px;
+    padding-top: 8px;
     section{
         text-align: center;
         user-select: none;// 文本不能被选择
@@ -49,17 +49,16 @@ export default {
         flex-grow: 1;
         line-height: 1;
         div{
-            width: 1.043478rem;
-            height: 1.043478rem;
-            font-size: 1.08rem;
+            width: 28px;
+            height: 28px;
+            font-size: 28px;
             margin: 0 auto;
             position: relative;
             color: #797979;
-            margin-bottom: 0.07rem;
+            margin-bottom: 2px;
         }
         .wx-n{
             color: #808080;
-            font-size: .386473rem;
             -webkit-transform-origin: 50% 0;
             transform-origin: 50% 0;
             -webkit-transform: scale(.9);
@@ -67,8 +66,8 @@ export default {
         }
         .wx-msg-count{
             position: absolute;
-            top: -0.1rem;
-            right: -0.3rem;
+            top: -3px;
+            right: -10px;
         }
         .wx-find-count{
             position: absolute;

@@ -57,11 +57,11 @@ export default {
     position: relative;
     section{
         display: none;
-        padding-top: 1.15942rem;
+        padding-top: 30px;
         background: #eee;
         width: 100%;
         overflow: hidden;
-        height: 30.917874rem;
+        height: 800px;
         z-index: 3;
         position: absolute;
         h3{
@@ -69,15 +69,15 @@ export default {
             font-weight: 400;
         }
         .w-list{
-            margin: .772947rem 0;
+            margin: 20px 0;
             .w-item{
                 width: 33.33%;
-                font-size: .541063rem;
+                font-size: 14px;
                 text-align: center;
                 float: left;
                 color: #09bb07;
                 box-sizing: border-box;
-                margin-bottom: .57971rem;
+                margin-bottom: 15px;
                 border-right: 1px solid rgba(#d9d9d9, 0.9)
             }
             .bn{

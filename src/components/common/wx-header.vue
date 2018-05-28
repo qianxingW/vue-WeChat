@@ -54,13 +54,13 @@ export default {
 .wx-header{
   position: relative;
   height: 100%;
-  padding: 0 .57971rem 0 .386473rem;
+  padding: 0 15px 0 10px;
   background: #1b1b1b;
-  line-height: 1.73913rem;
+  line-height: 45px;
   color: #fff;
   .header-name{
     margin: 0 auto;
-    font-size: .657005rem;
+    font-size: 18px;
     text-align: center;
     .wx-msg-count{
       font-style: normal;
@@ -69,37 +69,37 @@ export default {
   .header-other{
     position: absolute;
     top: 0;
-    right: .57971rem;
+    right: 10px;
     >.iconfont{
-      font-size: .850242rem;
-      width: 1.700483rem;
+      font-size: 22px;
+      width: 40px;
       text-align: center;
       display: inline-block;
     }
     .dropdown-menu{
       position: absolute;
       z-index: 3;
-      width: 3.980676rem;
-      font-size: .618357rem;
+      width: 103px;
+      font-size: 16px;
       right: 0;
-      top: 2.086957rem;
+      top: 54px;
       text-align: left;
-      border-radius: .077295rem;
+      border-radius: 2px;
       background-color: #49484b;
-      padding: 0 .57971rem;
+      padding: 0 15px;
       -webkit-transform-origin: 90% 0%;
       transform-origin: 90% 0%;
       li {
         position: relative;
-        height: 1.545894rem;
-        line-height: 1.545894rem;
+        height: 40px;
+        line-height: 40px;
         &:not(:last-child)::after {
           content: "";
           width: 200%;
           position: absolute;
           bottom: 0;
           left: 0;
-          height: .038647rem;
+          height: 1px;
           background-color: #5b5b5d;
           -webkit-transform: scale(0.5);
           transform: scale(0.5);
@@ -111,17 +111,17 @@ export default {
         width: 0;
         height: 0;
         position: absolute;
-        top: -.270531rem;
-        right: .57971rem;
+        top: -7px;
+        right: 15px;
         content: "";
-        border-width: 0 .231884rem .309179rem;
+        border-width: 0 6px 8px;
         border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #49484b rgba(0, 0, 0, 0);
         border-style: solid;
       }
       .iconfont {
         float: left;
-        font-size: .618357rem;
-        margin-right: .57971rem;
+        font-size: 16px;
+        margin-right: 15px;
     }
     }
     .menu-open{
