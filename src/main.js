@@ -4,9 +4,12 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import App from './App'
 import routes from './router/router'
+import VueTouch from 'vue-touch'
 import store from './store/'
-Vue.use(Router)
 
+Vue.use(Router)
+// 由于目前vue-touch不支持vue2.0.0以上 所以使用npm install vue-touch@next
+Vue.use(VueTouch, {name: 'v-touch'})
 const router = new Router({
   routes
 })

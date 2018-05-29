@@ -1,40 +1,67 @@
 module.exports = [
   {
     id: '0',
-    name: '马云',
-    nickname: '马小云', // 昵称
+    name: '佩奇',
+    nickname: '小佩奇', // 昵称
     sex: '0', // 性别 0 男 1 女
-    remarkname: '马小云', // 备注
-    wx_id: 'wx_my', // 微信号
+    remarkname: '小佩奇', // 备注
+    wx_id: 'wx_pq', // 微信号
     qq: '000000',
     area: ['中国', '北京', '北京'], // 地区
     type: 'friend',
+    MsgCount: 1,
     Msg: [{
-      text: '11',
-      endTimeStr: 1472632586443
+      senduser: '佩奇',
+      text: '不要问我从哪里来',
+      Time: '16:26'
     }],
     chatStatus: {
-      isMsgRead: true, // 标记已读
+      isMsgRead: false, // 标记已读
       isMsgDis: true // 消息免打扰
     }
   },
   {
     id: '1',
-    name: '马化腾',
-    nickname: '马小腾', // 昵称
+    name: '乔治',
+    nickname: '小乔治', // 昵称
     sex: '0', // 性别 0 男 1 女
-    remarkname: '马小腾', // 备注
-    wx_id: 'wx_mht', // 微信号
+    remarkname: '小乔治', // 备注
+    wx_id: 'wx_qz', // 微信号
     qq: '000001',
     area: ['中国', '北京', '北京'], // 地区
     type: 'friend',
+    MsgCount: 1,
     Msg: [{
+      senduser: '乔治',
       text: '11',
-      endTimeStr: 1472632586443
+      Time: '10:26'
+    }],
+    chatStatus: {
+      isMsgRead: false, // 标记已读
+      isMsgDis: false // 消息免打扰
+    }
+  },
+  {
+    id: '2',
+    name: '小猪佩奇粉丝群',
+    type: 'group',
+    MsgCount: 3,
+    Msg: [{
+      senduser: '乔治',
+      text: '我是弟弟，乔治',
+      Time: '09:23'
+    }, {
+      senduser: '佩奇',
+      text: '我是小猪佩奇',
+      Time: '08:10'
+    }, {
+      senduser: '丹尼',
+      text: '我是小羊，丹尼',
+      Time: '07:26'
     }],
     chatStatus: {
       isMsgRead: true, // 标记已读
-      isMsgDis: false // 消息免打扰
+      isMsgDis: true // 消息免打扰
     }
   }
 ]
