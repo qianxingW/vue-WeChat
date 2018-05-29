@@ -2,7 +2,10 @@
     <div class="chat-list">
         <ul>
             <li v-for="(item, index) in chatList" :key="index">
-                <v-touch class="weui-cell" v-on:tap="onTap(index)" v-on:swipeleft="info_swipeleft">
+                <v-touch class="weui-cell chat-info"
+                :class="{'current' : currentIndex === index}"
+                v-on:tap="chat_tap(index)"
+                v-on:swipeleft="chat_swipeleft(index)">
                     <div class="chat-left">
                         <img src="../../assets/logo.png" style="width: 50px;display: block">
                         <!-- 未读/消息未屏蔽 -->
@@ -39,6 +42,8 @@ import {mapState, mapActions} from 'vuex'
 export default {
   data () {
     return {
+      isSwiper: false, // 是否左划
+      currentIndex: -1 // 处于左划index
     }
   },
   computed: {
@@ -55,11 +60,24 @@ export default {
     ...mapActions([
       'getChatList'
     ]),
-    onTap (index) {
-      alert(index)
+    // 点击 先判断是否为左划状态
+    chat_tap (index) {
+      if (index > -1 && !this.isSwiper) {
+        alert(index)
+      } else {
+        this.currentIndex = -1
+        this.isSwiper = false // 状态改为非左划
+      }
     },
-    info_swipeleft () {
-      alert(1)
+    // 向左滑动
+    chat_swipeleft (index) {
+      // 未处于左划状态
+      if (!this.isSwiper) {
+        this.isSwiper = true // 状态改为左划
+        this.currentIndex = index
+      } else {
+        this.isSwiper = false // 状态改为非左划
+      }
     }
   }
 }
@@ -68,28 +86,36 @@ export default {
 .chat-list{
     li{
         position: relative;
-        .chat-left{
-            position: relative;
-            margin-right: 10px;
-        .weui-badge{
-                position: absolute;
-                top: -5px;
-                right: -5px;
+        .chat-info{
+            z-index: 2;
+            background-color: #ffffff;
+            transition: .2s all linear;
+            .chat-left{
+                position: relative;
+                margin-right: 10px;
+            .weui-badge{
+                    position: absolute;
+                    top: -5px;
+                    right: -5px;
+                }
+                .weui-badge_dot{
+                    top: -3px;
+                    right: -3px;
+                }
             }
-            .weui-badge_dot{
-                top: -3px;
-                right: -3px;
+            .weui-cell__bd{
+                .time{
+                    color: #B2B2B2;
+                    font-size: 14px;
+                }
+                .icon-msgdis{
+                    color: #b8b8b8;
+                    font-size: 14px;
+                }
             }
         }
-        .weui-cell__bd{
-            .time{
-                color: #B2B2B2;
-                font-size: 14px;
-            }
-            .icon-msgdis{
-                color: #b8b8b8;
-                font-size: 14px;
-            }
+        .current{
+            transform: translate3d(-156px, 0, 0);
         }
         .chat-right{
             position: absolute;
