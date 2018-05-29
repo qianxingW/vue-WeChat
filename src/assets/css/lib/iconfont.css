@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'iconfont';  /* project id 679033 */
-  src: url('//at.alicdn.com/t/font_679033_rw08dvo46jg1ra4i.eot');
-  src: url('//at.alicdn.com/t/font_679033_rw08dvo46jg1ra4i.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_679033_rw08dvo46jg1ra4i.woff') format('woff'),
-  url('//at.alicdn.com/t/font_679033_rw08dvo46jg1ra4i.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_679033_rw08dvo46jg1ra4i.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_679033_4qwjwaam5qm2t9.eot');
+  src: url('//at.alicdn.com/t/font_679033_4qwjwaam5qm2t9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_679033_4qwjwaam5qm2t9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_679033_4qwjwaam5qm2t9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_679033_4qwjwaam5qm2t9.svg#iconfont') format('svg');
 }
 
 .iconfont {
@@ -34,3 +34,35 @@
 .icon-sfk::before{content: "\e658"}
 /* 消息免打扰 */
 .icon-msgdis::before{content: "\e659"}
+/* 扫一扫 颜色 */
+.icon-syscolor::before{content: "\e601"}
+/* 附近的人 */
+.icon-nearman::before{content: "\e603"}
+/* 收藏 */
+.icon-collect::before{content: "\e618"}
+/* 相册 */
+.icon-photo::before{content: "\e604"}
+/* 设置 */
+.icon-setting::before{content: "\e611"}
+/* 朋友圈 */
+.icon-friendq::before{content: "\e6fd"}
+/* 卡包 */
+.icon-card::before{content: "\e609"}
+/* 二维码 */
+.icon-ecode::before{content: "\e612"}
+/* 表情 */
+.icon-emoji::before{content: "\e63e"}
+/* 购物 */
+.icon-shopping::before{content: "\e641"}
+/* 看一看 */
+.icon-lock::before{content: "\e642"}
+/* 漂流瓶 */
+.icon-driftbottle::before{content: "\e643"}
+/* 钱包 */
+.icon-money::before{content: "\e644"}
+/* 搜一搜 */
+.icon-seach::before{content: "\e647"}
+/* 摇一摇 */
+.icon-shake::before{content: "\e64e"}
+/* 游戏 */
+.icon-game::before{content: "\e64f"}

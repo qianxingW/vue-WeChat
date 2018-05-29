@@ -7,7 +7,9 @@
       <!-- 右侧按钮 -->
       <div class="header-other">
         <!-- 微信页面的添加 包括'发起群聊','添加朋友','扫一扫','收付款' -->
-        <span class="iconfont icon-plus" @click="TOOGGLE_MENU_STATUS"></span>
+        <span class="iconfont icon-plus" v-show="$route.path === '/'" @click="TOOGGLE_MENU_STATUS"></span>
+        <!-- 添加好友 只在通讯录页显示 -->
+        <router-link tag="span" class="iconfont icon-addfriend" v-show="$route.path === '/address'" to="/contact/add-friend"></router-link>
         <!-- 微信页面下拉菜单 -->
         <ul class="dropdown-menu" :class="menuStatus ? 'menu-open' : 'menu-close'">
           <li>
