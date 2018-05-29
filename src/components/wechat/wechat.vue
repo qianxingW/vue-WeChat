@@ -62,7 +62,7 @@ export default {
     ]),
     // 点击 先判断是否为左划状态
     chat_tap (index) {
-      if (index > -1 && !this.isSwiper) {
+      if (index >= 0 && !this.isSwiper) {
         alert(index)
       } else {
         this.currentIndex = -1
