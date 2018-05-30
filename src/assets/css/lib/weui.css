@@ -8,7 +8,7 @@ html{
   -webkit-text-size-adjust:100%;
 }
 body{
-  line-height:1.6;
+  /* line-height:1.6; */
   font-family:-apple-system-font, "Helvetica Neue", sans-serif;
 }
 *{
@@ -419,8 +419,8 @@ input.weui-btn_plain-default{
   top:0;
   right:0;
   height:1px;
-  border-top:1px solid #e5e5e5;
-  color:#e5e5e5;
+  border-top:1px solid #d9d9d9;
+  color:#d9d9d9;
   -webkit-transform-origin:0 0;
           transform-origin:0 0;
   -webkit-transform:scaleY(0.5);

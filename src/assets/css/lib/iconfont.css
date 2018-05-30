@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'iconfont';  /* project id 679033 */
-  src: url('//at.alicdn.com/t/font_679033_4qwjwaam5qm2t9.eot');
-  src: url('//at.alicdn.com/t/font_679033_4qwjwaam5qm2t9.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_679033_4qwjwaam5qm2t9.woff') format('woff'),
-  url('//at.alicdn.com/t/font_679033_4qwjwaam5qm2t9.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_679033_4qwjwaam5qm2t9.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_679033_grya2wuydk46ajor.eot');
+  src: url('//at.alicdn.com/t/font_679033_grya2wuydk46ajor.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_679033_grya2wuydk46ajor.woff') format('woff'),
+  url('//at.alicdn.com/t/font_679033_grya2wuydk46ajor.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_679033_grya2wuydk46ajor.svg#iconfont') format('svg');
 }
 
 .iconfont {
@@ -35,9 +35,9 @@
 /* 消息免打扰 */
 .icon-msgdis::before{content: "\e659"}
 /* 扫一扫 颜色 */
-.icon-syscolor::before{content: "\e601"}
+.icon-syscolor::before{content: "\e601"; color:#10AEFF}
 /* 附近的人 */
-.icon-nearman::before{content: "\e603"}
+.icon-nearman::before{content: "\e603"; color:#1296DB}
 /* 收藏 */
 .icon-collect::before{content: "\e618"}
 /* 相册 */
@@ -45,7 +45,7 @@
 /* 设置 */
 .icon-setting::before{content: "\e611"}
 /* 朋友圈 */
-.icon-friendq::before{content: "\e6fd"}
+.icon-friendq::before{content: "\e6fd"; color:#FA9D3B}
 /* 卡包 */
 .icon-card::before{content: "\e609"}
 /* 二维码 */
@@ -53,16 +53,24 @@
 /* 表情 */
 .icon-emoji::before{content: "\e63e"}
 /* 购物 */
-.icon-shopping::before{content: "\e641"}
+.icon-shopping::before{content: "\e641"; color:#FF2851}
 /* 看一看 */
-.icon-lock::before{content: "\e642"}
+.icon-lock::before{content: "\e642"; color:#FFCD00}
 /* 漂流瓶 */
-.icon-driftbottle::before{content: "\e643"}
+.icon-driftbottle::before{content: "\e643"; color:#73A8F5}
 /* 钱包 */
 .icon-money::before{content: "\e644"}
 /* 搜一搜 */
-.icon-seach::before{content: "\e647"}
+.icon-seach::before{content: "\e647"; color:#FF2851}
 /* 摇一摇 */
-.icon-shake::before{content: "\e64e"}
+.icon-shake::before{content: "\e64e"; color:#10AEFF}
 /* 游戏 */
 .icon-game::before{content: "\e64f"}
+/* 新的朋友 */
+.icon-newfriends::before{content: "\e605"; color:#FA9D3B}
+/* 群聊 */
+.icon-group::before{content: "\e657"; color:#2BA245}
+/* 标签 */
+.icon-bq::before{content: "\e652";color: #2782D7}
+/* 公众号 */
+.icon-gzh::before{content: "\e651"; color: #2782D7}

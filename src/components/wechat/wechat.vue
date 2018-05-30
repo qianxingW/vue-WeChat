@@ -1,5 +1,6 @@
 <template>
     <div class="chat-list">
+        <wx-seach></wx-seach>
         <ul>
             <li v-for="(item, index) in chatList" :key="index">
                 <v-touch class="weui-cell chat-info"
@@ -39,12 +40,16 @@
 </template>
 <script>
 import {mapState, mapActions} from 'vuex'
+import WxSeach from '../common/seach'
 export default {
   data () {
     return {
       isSwiper: false, // 是否左划
       currentIndex: -1 // 处于左划index
     }
+  },
+  components: {
+    WxSeach
   },
   computed: {
     ...mapState([
@@ -84,6 +89,8 @@ export default {
 </script>
 <style lang="scss">
 .chat-list{
+    overflow: auto;
+    height: 100%;
     li{
         position: relative;
         .chat-info{

@@ -5,10 +5,8 @@
       <header id="wx-header" :class="{'header-hide':seachStatus}">
         <wx-header></wx-header>
       </header>
-      <!-- 顶部搜索 '微信'.'通讯录' 显示-->
-      <wx-seach v-show="$route.path.indexOf('find') === -1 && $route.path.indexOf('me') === -1"></wx-seach>
       <!-- 主题内容 -->
-      <section id="wx-content">
+      <section id="wx-content" :class="{'content-change':seachStatus}">
         <keep-alive>
           <router-view></router-view>
         </keep-alive>
@@ -24,7 +22,6 @@
 <script>
 import {mapState} from 'vuex'
 import WxHeader from './components/common/wx-header'
-import WxSeach from './components/common/seach'
 import WxFooter from './components/common/wx-footer'
 export default {
   name: 'App',
@@ -39,7 +36,6 @@ export default {
   },
   components: {
     WxHeader,
-    WxSeach,
     WxFooter
   }
 }
@@ -65,7 +61,9 @@ export default {
 #wx-header{
   width: 100%;
   height: 45px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   background: linear-gradient(180deg,#303036,#3c3b40);
   transition: all 0.2s linear;
 }
@@ -74,17 +72,27 @@ export default {
   margin-top: -45px;
 }
 #wx-content{
-  padding-bottom: 50px;
-  overflow-x: hidden;
-  overflow-y: auto;
+  padding-top: 45px;
+  padding-bottom: 58px;
+  overflow: hidden;
   z-index: 1;
   width: 100%;
+  background: #f1f0f6;
+  height: calc(100% - 103px);
+  transition: padding-top 0.2s linear;
+}
+#wx-app .content-change{
+  padding-top: 0;
+  padding-bottom: 58px;
+  height: 100%;
 }
 #wx-footer{
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
+  background: #fff;
+  z-index: 3;
   &:not(:first-child)::before{
     content: " ";
     position: absolute;

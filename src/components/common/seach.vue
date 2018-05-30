@@ -61,7 +61,7 @@ export default {
         background: #eee;
         width: 100%;
         overflow: hidden;
-        height: 800px;
+        height: 662px;
         z-index: 3;
         position: absolute;
         h3{
