@@ -41,17 +41,17 @@
 /* 收藏 */
 .icon-collect::before{content: "\e618"}
 /* 相册 */
-.icon-photo::before{content: "\e604"}
+.icon-photo::before{content: "\e604"; color:#1195DB}
 /* 设置 */
-.icon-setting::before{content: "\e611"}
+.icon-setting::before{content: "\e611"; color:#357AE0}
 /* 朋友圈 */
 .icon-friendq::before{content: "\e6fd"; color:#FA9D3B}
 /* 卡包 */
-.icon-card::before{content: "\e609"}
+.icon-card::before{content: "\e609";color:#29ABE2}
 /* 二维码 */
 .icon-ecode::before{content: "\e612"}
 /* 表情 */
-.icon-emoji::before{content: "\e63e"}
+.icon-emoji::before{content: "\e63e"; color:#FFCD00}
 /* 购物 */
 .icon-shopping::before{content: "\e641"; color:#FF2851}
 /* 看一看 */
@@ -59,7 +59,7 @@
 /* 漂流瓶 */
 .icon-driftbottle::before{content: "\e643"; color:#73A8F5}
 /* 钱包 */
-.icon-money::before{content: "\e644"}
+.icon-money::before{content: "\e644"; color:#1195DB}
 /* 搜一搜 */
 .icon-seach::before{content: "\e647"; color:#FF2851}
 /* 摇一摇 */
