@@ -1,10 +1,22 @@
 # vue-wechat
+
 ##说明
-> 使用vue@2.5.2仿照微信开发单页面APP,页面基本还原微信,
+>  使用vue@2.5.2仿照微信开发单页面APP,页面基本还原微信
 >  如果对您有帮助，您可以点右上角 "Star ★" 支持一下 谢谢！ ^_^
 >  如有问题请直接在 Issues 中提，或者您发现问题并有非常好的解决方案，欢迎 PR 👍
 
-## 项目运行（node 6.0+）
+# 技术栈  
+
+  - vue
+  - vuex
+  - vue-cli
+  - vue-router
+  - vue-touch 目前不支持Vue 2.0  所以使用beta版
+  - weui
+  - scss
+
+
+# 项目运行（node 6.0+）
 
 ``` bash
 
