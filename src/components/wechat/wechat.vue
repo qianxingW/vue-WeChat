@@ -36,6 +36,7 @@
                 </v-touch>
             </li>
         </ul>
+        <router-view transition="cover" keep-alive></router-view>
     </div>
 </template>
 <script>
@@ -69,6 +70,7 @@ export default {
     chat_tap (index) {
       if (index >= 0 && !this.isSwiper) {
         alert(index)
+        this.$router.push('./chatdetail')
       } else {
         this.currentIndex = -1
         this.isSwiper = false // 状态改为非左划
