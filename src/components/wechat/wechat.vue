@@ -36,7 +36,9 @@
                 </v-touch>
             </li>
         </ul>
-        <router-view transition="cover" keep-alive></router-view>
+        <transition name="move">
+		    <router-view></router-view>
+		</transition>
     </div>
 </template>
 <script>
