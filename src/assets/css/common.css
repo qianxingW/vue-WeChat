@@ -88,20 +88,3 @@ ul {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-/**
-* router-view 动画
-* move
-*/
-/* 定义过渡生效时的状态 */
-.move-enter-active,.move-leave-active{
-
-}
-/* v-enter：定义进入过渡的开始状态。在元素被插入之前生效，在元素被插入之后的下一帧移除。
-
-
-
-v-enter-to: 2.1.8版及以上 定义进入过渡的结束状态。在元素被插入之后下一帧生效 (与此同时 v-enter 被移除)，在过渡/动画完成之后移除。
-
-v-leave: 定义离开过渡的开始状态。在离开过渡被触发时立刻生效，下一帧被移除。
-
-v-leave-to: 2.1.8版及以上 定义离开过渡的结束状态。在离开过渡被触发之后下一帧生效 (与此同时 v-leave 被删除)，在过渡/动画完成之后移除。 */

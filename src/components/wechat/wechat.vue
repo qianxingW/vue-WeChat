@@ -36,9 +36,12 @@
                 </v-touch>
             </li>
         </ul>
-        <transition name="move">
-		    <router-view></router-view>
-		</transition>
+        <transition
+        name="custom-classes-transition"
+        enter-active-class="animated fadeInRight"
+        leave-active-class="animated fadeOutRight">
+            <router-view></router-view>
+        </transition>
     </div>
 </template>
 <script>
@@ -71,7 +74,6 @@ export default {
     // 点击 先判断是否为左划状态
     chat_tap (index) {
       if (index >= 0 && !this.isSwiper) {
-        alert(index)
         this.$router.push('./chatdetail')
       } else {
         this.currentIndex = -1
