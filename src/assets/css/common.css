@@ -52,10 +52,13 @@ ol,
 ul {
     list-style: none;
 }
-
-.clear:after{
+.clear::before{
+    content: "";
+    display: table;
+}
+.clear::after{
     content: '';
-    display: block;
+    display: table;
     clear: both;
 }
 
@@ -82,9 +85,15 @@ ul {
 .show{
     display: block;
 }
-
-.ellipsis{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+/* 二级路由 */
+.sub-router{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: #eee;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    left: 0;
+    z-index: 5;
 }

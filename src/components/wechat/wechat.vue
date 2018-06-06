@@ -1,41 +1,43 @@
 <template>
-    <div class="chat-list">
-        <wx-seach></wx-seach>
-        <ul>
-            <li v-for="(item, index) in chatList" :key="index">
-                <v-touch class="weui-cell chat-info"
-                :class="{'current' : currentIndex === index}"
-                v-on:tap="chat_tap(index)"
-                v-on:swipeleft="chat_swipeleft(index)">
-                    <div class="chat-left">
-                        <img src="../../assets/logo.png" style="width: 50px;display: block">
-                        <!-- 未读/消息未屏蔽 -->
-                        <span class="weui-badge" v-show="!item.chatStatus.isMsgRead && !item.chatStatus.isMsgDis">{{item.MsgCount}}</span>
-                        <!-- 未读/消息屏蔽 -->
-                        <span class="weui-badge weui-badge_dot" v-show="!item.chatStatus.isMsgRead && item.chatStatus.isMsgDis"></span>
-                    </div>
-                    <div class="weui-cell__bd">
-                        <!-- 发送时间 -->
-                        <p class="time right">{{item.Msg[0].Time}}</p>
-                        <!-- 发送人 -->
-                        <p>{{item.name}}</p>
-                        <!-- 消息免打扰 铃铛 -->
-                        <p class="right iconfont icon-msgdis" v-show="item.chatStatus.isMsgDis"></p>
-                        <!-- 消息内容 -->
-                        <p style="font-size: 13px;color: #888888;">
-                            <!-- 群组 显示发送人名字 -->
-                            <span v-show="item.type === 'group'">{{item.Msg[0].senduser}}: </span>
-                            {{item.Msg[0].text}}
-                        </p>
-                    </div>
-                </v-touch>
-                <v-touch class="chat-right">
-                    <div class="chat-read" v-if="item.chatStatus.isMsgRead">标记未读</div>
-                    <div class="chat-read" v-else>标记已读</div>
-                    <div class="chat-del">删除</div>
-                </v-touch>
-            </li>
-        </ul>
+    <div>
+        <div class="chat-list">
+            <wx-seach></wx-seach>
+            <ul>
+                <li v-for="(item, index) in chatList" :key="index">
+                    <v-touch class="weui-cell chat-info"
+                    :class="{'current' : currentIndex === index}"
+                    v-on:tap="chat_tap(index, item.wx_id)"
+                    v-on:swipeleft="chat_swipeleft(index)">
+                        <div class="chat-left">
+                            <img src="../../assets/logo.png" style="width: 50px;display: block">
+                            <!-- 未读/消息未屏蔽 -->
+                            <span class="weui-badge" v-show="!item.chatStatus.isMsgRead && !item.chatStatus.isMsgDis">{{item.MsgCount}}</span>
+                            <!-- 未读/消息屏蔽 -->
+                            <span class="weui-badge weui-badge_dot" v-show="!item.chatStatus.isMsgRead && item.chatStatus.isMsgDis"></span>
+                        </div>
+                        <div class="weui-cell__bd">
+                            <!-- 发送时间 -->
+                            <p class="time right">{{item.Msg[0].Time}}</p>
+                            <!-- 发送人 -->
+                            <p>{{item.name}}</p>
+                            <!-- 消息免打扰 铃铛 -->
+                            <p class="right iconfont icon-msgdis" v-show="item.chatStatus.isMsgDis"></p>
+                            <!-- 消息内容 -->
+                            <p style="font-size: 13px;color: #888888;">
+                                <!-- 群组 显示发送人名字 -->
+                                <span v-show="item.type === 'group'">{{item.Msg[0].senduser}}: </span>
+                                {{item.Msg[0].text}}
+                            </p>
+                        </div>
+                    </v-touch>
+                    <v-touch class="chat-right">
+                        <div class="chat-read" v-if="item.chatStatus.isMsgRead">标记未读</div>
+                        <div class="chat-read" v-else>标记已读</div>
+                        <div class="chat-del">删除</div>
+                    </v-touch>
+                </li>
+            </ul>
+        </div>
         <transition
         name="custom-classes-transition"
         enter-active-class="animated fadeInRight"
@@ -72,9 +74,9 @@ export default {
       'getChatList'
     ]),
     // 点击 先判断是否为左划状态
-    chat_tap (index) {
+    chat_tap (index, wxId) {
       if (index >= 0 && !this.isSwiper) {
-        this.$router.push('./chatdetail')
+        this.$router.push({path: './dialogue', query: {wx_id: wxId}})
       } else {
         this.currentIndex = -1
         this.isSwiper = false // 状态改为非左划
@@ -106,7 +108,7 @@ export default {
             .chat-left{
                 position: relative;
                 margin-right: 10px;
-            .weui-badge{
+                .weui-badge{
                     position: absolute;
                     top: -5px;
                     right: -5px;

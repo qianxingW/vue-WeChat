@@ -11,6 +11,7 @@ module.exports = [
     type: 'friend',
     MsgCount: 1,
     Msg: [{
+      headerUrl: 'https://localhost:8080/vue-wechat/assets/logo.png',
       senduser: '佩奇',
       text: '不要问我从哪里来',
       Time: '16:26'
@@ -32,6 +33,7 @@ module.exports = [
     type: 'friend',
     MsgCount: 1,
     Msg: [{
+      headerUrl: '../../assets/img/qz.jpg',
       senduser: '乔治',
       text: '11',
       Time: '10:26'
@@ -47,14 +49,17 @@ module.exports = [
     type: 'group',
     MsgCount: 3,
     Msg: [{
+      headerUrl: '../../assets/img/qz.jpg',
       senduser: '乔治',
       text: '我是弟弟，乔治',
       Time: '09:23'
     }, {
+      headerUrl: '../../assets/img/pq.jpg',
       senduser: '佩奇',
       text: '我是小猪佩奇',
       Time: '08:10'
     }, {
+      headerUrl: '../../assets/img/dn.jpg',
       senduser: '丹尼',
       text: '我是小羊，丹尼',
       Time: '07:26'

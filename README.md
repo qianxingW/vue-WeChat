@@ -15,6 +15,7 @@
   - vue-cli
   - vue-router
   - vue-touch 目前不支持Vue 2.0  所以使用beta版
+  - fastclick
   - weui
   - scss
 
@@ -32,7 +33,7 @@ cd vue-WeChat
 # 安装依赖
 npm install
 
-# 开启本地服务器localhost:8088
+# 开启本地服务器localhost:8080
 npm run dev
 
 # 发布环境
