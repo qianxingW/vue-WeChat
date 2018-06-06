@@ -1,6 +1,8 @@
 # vue-wechat
 ## 开发中
 
+线上地址:  [qianxingw.github.io](https://qianxingw.github.io/index.html)
+
 # 说明
 >  使用vue@2.5.2仿照微信开发单页面APP
 
