@@ -3,6 +3,12 @@
 
 线上地址:  [qianxingw.github.io](https://qianxingw.github.io/index.html)
 
+###手机预览(QR)
+
+  ![](./src/assets/code.png)
+  
+  首次加载都很慢,请耐心等待。
+
 # 说明
 >  使用vue@2.5.2仿照微信开发单页面APP
 
