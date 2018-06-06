@@ -84,12 +84,13 @@ export default {
     },
     // 向左滑动
     chat_swipeleft (index) {
+      event.stopPropagation()
       // 未处于左划状态
       if (!this.isSwiper) {
         this.isSwiper = true // 状态改为左划
         this.currentIndex = index
       } else {
-        this.isSwiper = false // 状态改为非左划
+        this.currentIndex = index
       }
     }
   }
