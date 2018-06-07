@@ -2,7 +2,8 @@
 ## 开发中
 
 线上地址:  [qianxingw.github.io](https://qianxingw.github.io)
-项目地址 `https://github.com/qianxingW/vue-WeChat.git`
+
+项目地址 [qianxingW/vue-wechat](https://github.com/qianxingW/vue-WeChat.git)
 
 ###手机预览(QR)
 
