@@ -1,10 +1,10 @@
 <template>
     <div class="sub-router chat-detail">
-      <bk-header :backText="backText" :curText="curText" :otherIcon="otherIconL"></bk-header>
+      <bk-header :headData="headData"></bk-header>
       <div class="dialogue-box">
         <section class="dialogue clear">
-          <div class="row clear" v-for="(item, index) in msgInfo" :key="index">
-            <img src="../../assets/img/pq.jpg" class="header">
+          <div class="row clear" v-for="(item, index) in msgInfo.Msg" :key="index">
+            <img :src="item.headerUrl" class="header">
             <p class="text">{{item.text}}</p>
           </div>
         </section>
@@ -12,6 +12,12 @@
 
         </footer>
       </div>
+      <transition
+      name="custom-classes-transition"
+      enter-active-class="animated fadeInRight"
+      leave-active-class="animated fadeOutRight">
+        <router-view></router-view>
+      </transition>
     </div>
 </template>
 <script>
@@ -20,9 +26,14 @@ import bkHeader from '../common/bk-header'
 export default {
   data () {
     return {
-      backText: '微信',
-      curText: '佩奇',
-      otherIconL: 'icon-mes'
+      headData: {
+        msgid: this.$route.query.msgid,
+        backText: '微信',
+        curText: '',
+        otherIcon: '',
+        groupNum: '',
+        isMsgDis: ''
+      }
     }
   },
   components: {
@@ -32,22 +43,28 @@ export default {
     ...mapState([
       'chatList'
     ]),
-    // 根据wx_id来查找当前聊天内容
+    // 根据msgid来查找当前聊天内容
     msgInfo () {
       for (var i in this.chatList) {
-        if (this.chatList[i].wx_id === this.$route.query.wx_id) {
-          return this.chatList[i].Msg
+        if (this.chatList[i].msgid === this.$route.query.msgid) {
+          return this.chatList[i]
         }
       }
     }
   },
   created () {
-    console.log(this.$route.query)
-    console.log(this.chatList)
-  },
-  mounted () {
     // 获取聊天列表
     this.getChatList()
+    // 头部name
+    this.headData.curText = this.msgInfo.name
+    // 其他图标
+    this.headData.otherIcon = this.msgInfo.type
+    // 是群聊的显示人数
+    this.headData.groupNum = this.msgInfo.type === 'group' ? this.msgInfo.personNum : '0'
+    // 消息免打扰
+    this.headData.isMsgDis = this.msgInfo.chatStatus.isMsgDis
+  },
+  mounted () {
   },
   methods: {
     ...mapActions([

@@ -1,6 +1,6 @@
 module.exports = [
   {
-    id: '0',
+    msgid: '0',
     name: '佩奇',
     nickname: '小佩奇', // 昵称
     sex: '0', // 性别 0 男 1 女
@@ -9,9 +9,10 @@ module.exports = [
     qq: '000000',
     area: ['中国', '北京', '北京'], // 地区
     type: 'friend',
+    headerUrl: 'https://qianxingw.github.io/img/pq.jpg',
     MsgCount: 1,
     Msg: [{
-      headerUrl: 'https://localhost:8080/vue-wechat/assets/logo.png',
+      headerUrl: 'https://qianxingw.github.io/img/pq.jpg',
       senduser: '佩奇',
       text: '不要问我从哪里来',
       Time: '16:26'
@@ -22,7 +23,7 @@ module.exports = [
     }
   },
   {
-    id: '1',
+    msgid: '1',
     name: '乔治',
     nickname: '小乔治', // 昵称
     sex: '0', // 性别 0 男 1 女
@@ -32,8 +33,9 @@ module.exports = [
     area: ['中国', '北京', '北京'], // 地区
     type: 'friend',
     MsgCount: 1,
+    headerUrl: 'https://qianxingw.github.io/img/qz.jpg',
     Msg: [{
-      headerUrl: '../../assets/img/qz.jpg',
+      headerUrl: 'https://qianxingw.github.io/img/qz.jpg',
       senduser: '乔治',
       text: '11',
       Time: '10:26'
@@ -44,22 +46,24 @@ module.exports = [
     }
   },
   {
-    id: '2',
+    msgid: '2',
     name: '小猪佩奇粉丝群',
     type: 'group',
     MsgCount: 3,
+    personNum: 3,
+    headerUrl: 'https://qianxingw.github.io/img/qz.jpg',
     Msg: [{
-      headerUrl: '../../assets/img/qz.jpg',
+      headerUrl: 'https://qianxingw.github.io/img/qz.jpg',
       senduser: '乔治',
       text: '我是弟弟，乔治',
       Time: '09:23'
     }, {
-      headerUrl: '../../assets/img/pq.jpg',
+      headerUrl: 'https://qianxingw.github.io/img/pq.jpg',
       senduser: '佩奇',
       text: '我是小猪佩奇',
       Time: '08:10'
     }, {
-      headerUrl: '../../assets/img/dn.jpg',
+      headerUrl: 'https://qianxingw.github.io/img/dn.jpg',
       senduser: '丹尼',
       text: '我是小羊，丹尼',
       Time: '07:26'

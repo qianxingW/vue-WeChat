@@ -3,7 +3,7 @@
         <div class="weui-cells me-info">
             <div class="weui-cell weui-cell_access">
                 <div class="weui-cell__hd">
-                    <img src="../../assets/img/me.jpg" alt="">
+                    <img src="https://qianxingw.github.io/img/me.jpg" alt="">
                 </div>
                 <div class="weui-cell__bd">
                     <p>佩奇</p>

@@ -6,10 +6,10 @@
                 <li v-for="(item, index) in chatList" :key="index">
                     <v-touch class="weui-cell chat-info"
                     :class="{'current' : currentIndex === index}"
-                    v-on:tap="chat_tap(index, item.wx_id)"
+                    v-on:tap="chat_tap(index, item.msgid)"
                     v-on:swipeleft="chat_swipeleft(index)">
                         <div class="chat-left">
-                            <img src="../../assets/logo.png" style="width: 50px;display: block">
+                            <img :src="item.headerUrl" style="width: 50px;display: block">
                             <!-- 未读/消息未屏蔽 -->
                             <span class="weui-badge" v-show="!item.chatStatus.isMsgRead && !item.chatStatus.isMsgDis">{{item.MsgCount}}</span>
                             <!-- 未读/消息屏蔽 -->
@@ -74,9 +74,9 @@ export default {
       'getChatList'
     ]),
     // 点击 先判断是否为左划状态
-    chat_tap (index, wxId) {
+    chat_tap (index, msgid) {
       if (index >= 0 && !this.isSwiper) {
-        this.$router.push({path: './dialogue', query: {wx_id: wxId}})
+        this.$router.push({path: './dialogue', query: {msgid: msgid}})
       } else {
         this.currentIndex = -1
         this.isSwiper = false // 状态改为非左划

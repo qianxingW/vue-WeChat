@@ -2,24 +2,23 @@
     <div class="wx-head">
         <div class="wx-back" @click="$router.back()">
             <span class="iconfont icon-back"></span>
-            {{backText}}(1)
+            {{headData.backText}}
         </div>
         <div class="wx-other">
-            <span class="iconfont" :class="otherIcon"></span>
+            <router-link :to="{path:'/dialogue/dialogueFInfo',query: { msgid: headData.msgid}}" v-show="headData.otherIcon === 'friend'" tag="span" class="iconfont icon-mes"></router-link>
+            <router-link :to="{path:'/dialogue/dialogueGInfo',query: { msgid: headData.msgid}}" v-show="headData.otherIcon === 'group'" tag="span" class="iconfont icon-groups"></router-link>
         </div>
         <div class="wx-name">
-            <span>{{curText}}</span>
-            <span>(100)</span>
-            <span class="iconfont icon-msgdis"></span>
+            <span>{{headData.curText}}</span>
+            <span v-show="headData.groupNum > 0">({{headData.groupNum}})</span>
+            <span class="iconfont icon-msgdis" v-show="headData.isMsgDis"></span>
         </div>
     </div>
 </template>
 <script>
 export default {
   props: [
-    'backText',
-    'curText',
-    'otherIcon'
+    'headData'
   ],
   data () {
     return {
