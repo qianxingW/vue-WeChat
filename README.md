@@ -7,7 +7,7 @@
 
 ###手机预览(QR)
 
-  ![](./src/assets/code.png)
+  ![](./src/assets/ecode.png)
   
   首次加载都很慢,请耐心等待。
 
