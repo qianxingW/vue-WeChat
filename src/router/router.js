@@ -13,12 +13,15 @@ export default [
     name: 'WeChat',
     component: WeChat,
     children: [{
+      // 聊天窗口
       path: '/dialogue',
       component: ChatDialogue,
       children: [{
+        // 个人聊天 详情
         path: 'dialogueFInfo',
         component: DialogueFInfo
       }, {
+        // 群组聊天 详情
         path: 'dialogueGInfo',
         component: DialogueGInfo
       }]
