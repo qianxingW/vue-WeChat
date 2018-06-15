@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'iconfont';  /* project id 679033 */
-  src: url('//at.alicdn.com/t/font_679033_p3g4pzlyy5j.eot');
-  src: url('//at.alicdn.com/t/font_679033_p3g4pzlyy5j.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_679033_p3g4pzlyy5j.woff') format('woff'),
-  url('//at.alicdn.com/t/font_679033_p3g4pzlyy5j.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_679033_p3g4pzlyy5j.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_679033_wp8jozdrh8e.eot');
+  src: url('//at.alicdn.com/t/font_679033_wp8jozdrh8e.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_679033_wp8jozdrh8e.woff') format('woff'),
+  url('//at.alicdn.com/t/font_679033_wp8jozdrh8e.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_679033_wp8jozdrh8e.svg#iconfont') format('svg');
 }
 
 .iconfont {
@@ -50,6 +50,8 @@
 .icon-card::before{content: "\e609";color:#29ABE2}
 /* 二维码 */
 .icon-ecode::before{content: "\e612"}
+/* 二维码 颜色 */
+.icon-cecode::before{content: "\e612"; color: #4CCB4B}
 /* 表情 */
 .icon-emoji::before{content: "\e63e"; color:#FFCD00}
 /* 购物 */
@@ -84,3 +86,5 @@
 .icon-phone::before{content: "\e607"; color:#4BB94B}
 /* 搜索 */
 .icon-search::before{content: "\e60b"; color:#4BB94B}
+/* 雷达 */
+.icon-ld::before{content: "\e665"; color:#2782D7}
