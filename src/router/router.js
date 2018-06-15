@@ -4,6 +4,9 @@ const DialogueFInfo = r => require.ensure([], () => r(require('../components/wec
 const DialogueGInfo = r => require.ensure([], () => r(require('../components/wechat/dialogueGInfo')), 'DialogueGInfo')
 
 const Address = r => require.ensure([], () => r(require('../components/address/address')), 'Address')
+const NewFriends = r => require.ensure([], () => r(require('../components/address/newfriends')), 'NewFriends')
+const AddFriend = r => require.ensure([], () => r(require('../components/address/addfriend')), 'AddFriend')
+
 const Find = r => require.ensure([], () => r(require('../components/find/find')), 'Find')
 const Me = r => require.ensure([], () => r(require('../components/me/me')), 'Me')
 export default [
@@ -31,7 +34,19 @@ export default [
   {
     path: '/address',
     name: 'Address',
-    component: Address
+    component: Address,
+    // 新的朋友
+    children: [{
+      path: 'newfriends',
+      component: NewFriends,
+      children: [{
+        path: 'addfriend',
+        component: AddFriend
+      }]
+    }, {
+      path: 'addfriend',
+      component: AddFriend
+    }]
   },
   // 发现
   {
