@@ -1,7 +1,7 @@
 # vue-wechat
 ## 开发中
 
-线上地址:  [qianxingw.github.io](https://qianxingw.github.io)
+线上地址:  [qianxingw.github.io](https://qianxingw.github.io/index.html)
 
 项目地址 [qianxingW/vue-wechat](https://github.com/qianxingW/vue-WeChat.git)
 
