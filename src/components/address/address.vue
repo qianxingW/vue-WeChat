@@ -11,14 +11,14 @@
                         <p>新的朋友</p>
                     </div>
                 </router-link>
-                <div class="weui-cell">
+                <router-link to="/address/groupchat" tag="div" class="weui-cell">
                     <div class="weui-cell__hd">
                         <span class="iconfont icon-group"></span>
                     </div>
                     <div class="weui-cell__bd">
                         <p>群聊</p>
                     </div>
-                </div>
+                </router-link>
                 <div class="weui-cell">
                     <div class="weui-cell__hd">
                         <span class="iconfont icon-bq"></span>
@@ -41,7 +41,7 @@
                 <div class="weui-cells">
                     <div class="weui-cell" v-for="(value, index) in item" :key="index">
                         <div class="weui-cell__hd">
-                            <span class="iconfont icon-newfriends"></span>
+                            <img :src="value.headerUrl" alt="">
                         </div>
                         <div class="weui-cell__bd">
                             <p>{{value.name}}</p>
@@ -109,6 +109,10 @@ export default {
             line-height: 20px;
             font-size: 14px;
             color: #888;
+        }
+        img{
+            width: 36px;
+            height: 36px;
         }
     }
     .letter-list{

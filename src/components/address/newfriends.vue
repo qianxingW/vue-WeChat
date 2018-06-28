@@ -15,7 +15,7 @@
         <div class="weui-cells new-list">
             <div class="weui-cell">
                 <div class="weui-cell__hd">
-                    <img src="../../assets/logo.png" alt="">
+                    <img src="https://qianxingw.github.io/img/pq.jpg" alt="">
                 </div>
                 <div class="weui-cell__bd">
                     <p>路飞</p>
@@ -27,10 +27,10 @@
             </div>
             <div class="weui-cell">
                 <div class="weui-cell__hd">
-                    <img src="../../assets/logo.png" alt="">
+                    <img src="https://qianxingw.github.io/img/qz.jpg" alt="">
                 </div>
                 <div class="weui-cell__bd">
-                    <p>露娜</p>
+                    <p>乔治</p>
                     <p class="con">请求添加你为朋友</p>
                 </div>
                 <div class="weui-cell_ft">
@@ -39,19 +39,7 @@
             </div>
             <div class="weui-cell">
                 <div class="weui-cell__hd">
-                    <img src="../../assets/logo.png" alt="">
-                </div>
-                <div class="weui-cell__bd">
-                    <p>苏西</p>
-                    <p class="con">请求添加你为朋友</p>
-                </div>
-                <div class="weui-cell_ft">
-                    已拒绝
-                </div>
-            </div>
-            <div class="weui-cell">
-                <div class="weui-cell__hd">
-                    <img src="../../assets/logo.png" alt="">
+                    <img src="https://qianxingw.github.io/img/dn.jpg" alt="">
                 </div>
                 <div class="weui-cell__bd">
                     <p>苏西</p>

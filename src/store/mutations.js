@@ -1,7 +1,8 @@
 import {
   TOOGGLE_MENU_STATUS,
   TOOGGLE_SEACH_STATUS,
-  GET_CHAT_LEST
+  GET_CHAT_LEST,
+  GET_GROUP_LEST
 } from './mutation-types.js'
 // 改变state数据的唯一途径，且不能用于处理异步事件（重点！！！）
 export default {
@@ -16,5 +17,9 @@ export default {
   // 获取聊天列表
   [GET_CHAT_LEST] (state, list) {
     state.chatList = list
+  },
+  // 获取群聊
+  [GET_GROUP_LEST] (state, list) {
+    state.groupList = list
   }
 }
