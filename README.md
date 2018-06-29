@@ -57,12 +57,12 @@ npm run build
 
 **微信tab切换**
 
-![微信列表的滑动交互](./src/assets/gif/wx-tab.gif)
+![微信tab切换](./src/assets/gif/wx-tab.gif)
 
 **微信聊天页面**
 
-![微信列表的滑动交互](./src/assets/gif/chat.gif)
+![微信聊天页面](./src/assets/gif/chat.gif)
 
 **微信通讯录页面**
 
-![微信列表的滑动交互](./src/assets/gif/address.gif)
+![微信通讯录页面](./src/assets/gif/address.gif)
