@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="wx-app">
-      <!-- 顶部显示 测试撤回-->
+      <!-- 顶部显示 第二次测试撤回-->
       <header id="wx-header" :class="{'header-hide':seachStatus}">
         <wx-header></wx-header>
       </header>
