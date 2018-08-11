@@ -11,7 +11,7 @@
           <router-view></router-view>
         </keep-alive>
       </section>
-      <!-- 底部切换 '微信','通讯录','发现','我' 第四次测试撤回-->
+      <!-- 底部切换 '微信','通讯录','发现','我' 第四次测试撤回 还是测试-->
       <footer id="wx-footer">
         <wx-footer></wx-footer>
       </footer>
