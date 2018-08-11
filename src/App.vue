@@ -5,13 +5,13 @@
       <header id="wx-header" :class="{'header-hide':seachStatus}">
         <wx-header></wx-header>
       </header>
-      <!-- 主题内容 -->
+      <!-- 主题内容 第三次测试撤回-->
       <section id="wx-content" :class="{'content-change':seachStatus}">
         <keep-alive>
           <router-view></router-view>
         </keep-alive>
       </section>
-      <!-- 底部切换 '微信','通讯录','发现','我' -->
+      <!-- 底部切换 '微信','通讯录','发现','我' 第四次测试撤回-->
       <footer id="wx-footer">
         <wx-footer></wx-footer>
       </footer>
