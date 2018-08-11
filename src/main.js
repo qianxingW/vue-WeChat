@@ -9,7 +9,7 @@ import fastclick from 'fastclick'
 import store from './store/'
 
 Vue.use(Router)
-// 由于目前vue-touch不支持vue2.0.0以上 所以使用npm install vue-touch@next
+// 由于目前vue-touch不支持vue2.0.0以上 所以使用npm install vue-touch@next 第二个测试文件
 Vue.use(VueTouch, {name: 'v-touch'})
 
 const router = new Router({
