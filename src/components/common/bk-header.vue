@@ -7,6 +7,7 @@
         <div class="wx-other">
             <router-link :to="{path:'/dialogue/dialogueFInfo',query: { msgid: headData.msgid}}" v-show="headData.otherIcon === 'friend'" tag="span" class="iconfont icon-mes"></router-link>
             <router-link :to="{path:'/dialogue/dialogueGInfo',query: { msgid: headData.msgid}}" v-show="headData.otherIcon === 'group'" tag="span" class="iconfont icon-groups"></router-link>
+            <router-link :to="{path:'/address/newfriends/addfriend',query: { msgid: headData.msgid}}" v-show="headData.otherIcon === 'addfriend'" tag="span" class="">添加朋友</router-link>
         </div>
         <div class="wx-name">
             <span>{{headData.curText}}</span>

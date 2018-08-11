@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="chat-list">
-            <wx-seach></wx-seach>
+            <wx-search></wx-search>
             <ul>
                 <li v-for="(item, index) in chatList" :key="index">
                     <v-touch class="weui-cell chat-info"
@@ -48,7 +48,7 @@
 </template>
 <script>
 import {mapState, mapActions} from 'vuex'
-import WxSeach from '../common/seach'
+import WxSearch from '../common/search'
 export default {
   data () {
     return {
@@ -57,7 +57,7 @@ export default {
     }
   },
   components: {
-    WxSeach
+    WxSearch
   },
   computed: {
     ...mapState([
