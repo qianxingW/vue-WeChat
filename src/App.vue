@@ -5,7 +5,7 @@
       <header id="wx-header" :class="{'header-hide':seachStatus}">
         <wx-header></wx-header>
       </header>
-      <!-- 主题内容 第三次测试撤回-->
+      <!-- 主题内容 第三次测试撤回 新分支测试-->
       <section id="wx-content" :class="{'content-change':seachStatus}">
         <keep-alive>
           <router-view></router-view>
