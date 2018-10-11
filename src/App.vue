@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+  <!-- 顶部显示-->
     <div id="wx-app">
       <!-- 顶部显示 第二次测试撤回 版本测试 分支测试 two分支测试-->
       <header id="wx-header" :class="{'header-hide':seachStatus}">
