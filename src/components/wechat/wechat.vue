@@ -37,6 +37,7 @@
                     </v-touch>
                 </li>
             </ul>
+            <div v-for="(item, index) in items" :key="index"></div>
         </div>
         <transition
         name="custom-classes-transition"
@@ -53,7 +54,8 @@ export default {
   data () {
     return {
       isSwiper: false, // 是否左划
-      currentIndex: -1 // 处于左划index
+      currentIndex: -1, // 处于左划index
+      items: []
     }
   },
   components: {
