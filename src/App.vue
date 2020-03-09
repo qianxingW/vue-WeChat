@@ -1,11 +1,13 @@
 <template>
   <div id="app">
+   <!-- 同步更改测试 -->
     <div id="wx-app">
       <!-- 顶部显示 第二次测试撤回 版本测试-->
+      <!-- 顶部显示 第二次测试撤回 版本测试 分支测试 two分支测试-->
       <header id="wx-header" :class="{'header-hide':seachStatus}">
         <wx-header></wx-header>
       </header>
-      <!-- 主题内容 第三次测试撤回-->
+      <!-- 主题内容 第三次测试撤回 新分支测试-->
       <section id="wx-content" :class="{'content-change':seachStatus}">
         <keep-alive>
           <router-view></router-view>
